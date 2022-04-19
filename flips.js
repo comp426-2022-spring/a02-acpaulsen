@@ -2,7 +2,7 @@ import {coinFlips,countFlips} from './modules.coin.mjs';
 import minimist from "minimist";
 
 var bloog = minimist(process.argv.slice(2));
-var count = args.number;
+var count = bloog.number;
 
 if (count == undefined) {
     count = 1;
