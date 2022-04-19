@@ -1,4 +1,4 @@
-import {coinFlips,countFlips} from './modules.coin.mjs';
+import {coinFlips,countFlips} from "./modules.coin.mjs";
 import minimist from "minimist";
 
 var bloog = minimist(process.argv.slice(2));
