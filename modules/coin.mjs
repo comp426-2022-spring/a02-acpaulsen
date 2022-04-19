@@ -106,3 +106,5 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+
+export{coinFlip,flipACoin,countFlips,coinFlips}
