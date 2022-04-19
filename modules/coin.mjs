@@ -41,7 +41,13 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  var ret = [];
+  var counter = 0;
+  while (counter<flips) {
+    ret[counter] = coinFlips();
+    counter++;
+  }
+  return ret
 }
 
 /** Count multiple flips
