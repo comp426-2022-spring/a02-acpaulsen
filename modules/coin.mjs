@@ -64,7 +64,18 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
+  var hCount = 0;
+  var tCount = 0;
+  array.forEach(element => {
+    if (element == "heads")
+      hCount++;
+    else 
+      tCount++;});
+  let dict = new Object()
+  dict["heads"] = hCount
+  dict["tails"] = tCount
 
+  return dict
 }
 
 /** Flip a coin!
@@ -79,7 +90,15 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-
+  let dict = new Object()
+  dict["call"] = call
+  let flip = coinFlip()
+  dict["flip"] = flip
+  if (flip == call)
+    dict["result"] = "win"
+  else
+    dict["result"] = "lose"
+  return dict
 }
 
 
