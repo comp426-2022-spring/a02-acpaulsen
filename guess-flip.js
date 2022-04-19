@@ -2,7 +2,7 @@ import {flipACoin} from "./modules/coin.mjs";
 import minimist from "minimist";
 var gloog = minimist(process.argv.slice(2))
 
-var froog = args.call;
+var froog = gloog.call;
 if ((froog == "heads") | (froog == "tails")) {
     console.log(flipACoin(froog))
 }
