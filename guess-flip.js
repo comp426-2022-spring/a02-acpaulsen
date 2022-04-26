@@ -1,5 +1,8 @@
 import {flipACoin} from "./modules/coin.mjs";
-import minimist from "minimist";
+
+const require = createRequire(import.meta.url);
+const args = (require("./node_modules/minimist"))(process.argv.slice(2));
+
 var gloog = minimist(process.argv.slice(2))
 
 var froog = gloog.call;
