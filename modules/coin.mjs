@@ -40,14 +40,14 @@ function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
-  var results = [];
-  var counter = 0;
-  while (counter<flips) {
-    results[counter] = coinFlips();
-    counter++;
+export function coinFlips(flips) {
+  let list = [];
+  let i = 0;
+  while (i < flips) {
+    list.push(coinFlip());
+    i++;
   }
-  return results
+  return list;
 }
 
 /** Count multiple flips
