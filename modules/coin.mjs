@@ -40,7 +40,7 @@ function coinFlip() {
     ]
  */
 
-export function coinFlips(flips) {
+function coinFlips(flips) {
   var results = [];
   var counter = 0;
   while (counter<flips) {
@@ -108,3 +108,5 @@ function flipACoin(call) {
 */
 
 export{coinFlip,flipACoin,countFlips,coinFlips}
+
+// adding comment to trigger reload
